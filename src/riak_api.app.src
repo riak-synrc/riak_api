@@ -4,11 +4,8 @@
  [
   {description, "Riak Client APIs"},
   {vsn, git},
-  {applications, [
-                  kernel,
-                  stdlib,
-                  lager,
-                  riak_core
+  {applications, [kernel,stdlib,lager,mochiweb,
+                             webmachine,riak_core
                  ]},
   {registered, [riak_api_sup,
                 riak_api_pb_sup]},
